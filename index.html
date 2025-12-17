@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+nav {
+text-align: center;
+margin: 20px 0;
+}
+nav a {
+margin: 0 15px;
+text-decoration: none;
+color: #4CAF50;
+font-weight: bold;
+font-size: 18px;
+}
+nav a:hover {
+text-decoration: underline;
+ }
+
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #c7d2fe, #f5f7ff);
+    }
+
+    .about-card {
+      background: #ffffff;
+      max-width: 720px;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    /* PERFECT CIRCLE CONTAINER */
+    .image-circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;               /* IMPORTANT */
+      border: 5px solid #4f46e5;
+      box-shadow: 0 12px 25px rgba(79, 70, 229, 0.35);
+      flex-shrink: 0;
+    }
+
+    /* IMAGE INSIDE CIRCLE */
+    .image-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;               /* Crop properly */
+      object-position: center;
+    }
+
+    .about-text h2 {
+      margin-top: 0;
+      color: #4f46e5;
+      font-size: 26px;
+    }
+
+    .about-text p {
+      color: #374151;
+      line-height: 1.8;
+      font-size: 15.5px;
+    }
+
+    .about-text b {
+      color: #1e3a8a;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 650px) {
+      .about-card {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<nav>
+<a href="index.html">Home</a>
+<a href="contact.html">contact</a> 
+<a href="skills.html">skills</a> 
+<a href="career objective.html">objective</a> 
+</nav>
+
+  <div class="about-card">
+
+    <!-- PERFECT CIRCLE IMAGE -->
+    <div class="image-circle">
+      <img src="profile.jpg" alt="Samruddhi">
+    </div>
+
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        My name is <b>Samruddhi Rajendra Bhambare</b>. I am currently studying in
+        <b>FY B.Tech (Electrical Engineering)</b> at
+        <b>Sanjivani College of Engineering, Kopargaon</b>.
+        I am passionate about technology, web development, coding, and learning new things.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
